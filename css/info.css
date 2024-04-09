@@ -60,11 +60,15 @@ span {
   align-items: center;
   gap: 15px;
 }
+.cta_two {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 50px;
   padding: 4px, 19px, 4px, 19px;
   border-radius: 25px;
@@ -94,4 +98,12 @@ span {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

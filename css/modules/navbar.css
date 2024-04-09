@@ -25,3 +25,19 @@
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
+
+/******************* Small devices (phones, less than 768px)**************/
+@media (max-width: 767.98px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .items {
+    padding-bottom: 18px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .items_overline:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+  }
+}

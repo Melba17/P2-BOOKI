@@ -23,6 +23,7 @@
 .main-container {
   width: 100%;
   max-width: 1440px;
+  min-width: 1025px;
   padding: 0 50px;
   box-sizing: border-box;
 }
@@ -35,4 +36,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*****définition du largeur minimum*****/
+  .main-container {
+    min-width: 320px;
+  }
 }
