@@ -1,0 +1,22 @@
+/**************************FOOTER**********************/
+/************Bloc global**************/
+.bckg {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-bg-color);
+  width: 1340px;
+  height: 163px;
+}
+footer span {
+  font-size: 18px;
+}
+/********Mise en forme des 3 colonnes**********/
+.footer {
+  width: 446.67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 20px;
+  gap: 15px;
+}
