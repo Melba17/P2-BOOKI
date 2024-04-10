@@ -43,5 +43,6 @@ a {
   /*****définition du largeur minimum*****/
   .main-container {
     min-width: 320px;
+    padding: 0 0;
   }
 }

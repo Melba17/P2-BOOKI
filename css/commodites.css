@@ -217,8 +217,37 @@
     width: 100%;
   }
 }
-
-/* Small devices (phones, less than 768px) */
+/*****Small devices (phones, less than 768px)******/
 @media (max-width: 767.98px) {
-  /* ... */
+  .hebergements-and-populaires section {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .populaires-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .populaires-cards a {
+    width: 100%;
+  }
+  .hebergements-cards {
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .card-act {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .activites-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .activites-cards img {
+    height: 141px;
+  }
+  .card-act-title {
+    padding: 20px;
+  }
 }
