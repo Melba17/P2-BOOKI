@@ -31,73 +31,95 @@
       <header>
         <nav>
           <div class="flex">
-            <!--------LOGO------->
-            <a href="index.html">
-              <!----Téléchargement de l'icône Booki au format SVG, directement depuis Figma, pour un meilleur visuel-->
-              <img
-                src="images/logo/Logo booki.svg"
-                alt="Logo Booki"
-                title="Logo Booki"
-                class="logo"
-            /></a>
-            <!---------------MENU--------------->
-            <div>
-              <a href="#housing" class="items items_overline">Hébergements</a>
-              <a href="#leisure" class="items items_overline">Activités</a>
+            <img
+              src="images/logo/Booki@3x.png"
+              alt="Logo Booki"
+              title="Logo Booki"
+              class="logo"
+            />
+            <div class="block">
+              <div>
+                <a href="#housing">Hébergements</a>
+              </div>
+              <div>
+                <a href="#leisure">Activités</a>
+              </div>
             </div>
           </div>
         </nav>
       </header>
       <main>
         <!--------------PRESENTATION--------------->
-        <div class="ligne espace">
-          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-          <p>En plein centre-ville ou en pleine nature</p>
-        </div>
-        <!--------------Barre de Recherche--------------->
-        <div class="form espace">
-          <div class="fond">
-            <!----Téléchargement de l'icône map au format SVG, directement depuis Figma, pour un meilleur visuel-->
-            <img src="images/logo/map.svg" alt="icône de localisation" />
+        <section class="marge">
+          <div class="ligne espaces haut">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre-ville ou en pleine nature</p>
           </div>
-          <section>
-            <form action="" method="get">
-              <input type="search" name="ville" class="cadre" /><input
-                type="submit"
-                value="Rechercher"
-                class="submit"
-              /><input
-                type="image"
-                alt="bouton d'envoi"
-                src="./images/logo/Button.svg"
-              />
-            </form>
-          </section>
-        </div>
-        <!------------FILTRES------------->
-        <div class="cta espace">
-          <span>Filtres</span>
-          <div class="cta_two">
-            <a href="" class="btn one"
-              ><i class="fa-solid fa-money-bill-wave fa-lg"></i>Économique</a
-            >
-            <a href="" class="btn two"
-              ><i class="fa-solid fa-person fa-lg"></i>Familial</a
-            >
-            <a href="" class="btn three"
-              ><i class="fa-solid fa-heart fa-lg"></i>Romantique</a
-            >
-            <a href="" class="btn four"
-              ><i class="fa-solid fa-fire fa-lg"></i>Nos pépites</a
-            >
+          <!--------------Barre de Recherche--------------->
+          <div class="form espaces">
+            <div class="fond">
+              <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
+              <i
+                class="fa-solid fa-location-dot fa-lg"
+                style="color: #000000"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <section>
+              <form action="" method="get">
+                <input
+                  type="search"
+                  name="ville"
+                  value="Marseille, France"
+                  class="cadre"
+                />
+                <button type="submit" class="submit">
+                  <span class="rechercher">Rechercher</span
+                  ><!----icône loupe pour la partie responsive mobile---->
+                  <span class="loupe"
+                    ><i
+                      class="fa-solid fa-magnifying-glass"
+                      style="color: #ffffff"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </button>
+              </form>
+            </section>
           </div>
-        </div>
-        <!------------INFOS---------------->
-        <div class="info espace">
-          <!----Téléchargement de l'icône I au format SVG, directement depuis Figma, pour un meilleur visuel-->
-          <img src="images/logo/Info.svg" alt="icône information" />
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
+          <!------------FILTRES------------->
+          <div class="cta espaces">
+            <span>Filtres</span>
+            <div class="cta_two">
+              <a href="" class="btn one"
+                ><i
+                  class="fa-solid fa-money-bill-wave fa-lg"
+                  aria-hidden="true"
+                ></i
+                >Économique</a
+              >
+              <a href="" class="btn two"
+                ><i class="fa-solid fa-person fa-lg" aria-hidden="true"></i
+                >Familial</a
+              >
+              <a href="" class="btn three"
+                ><i class="fa-solid fa-heart fa-lg" aria-hidden="true"></i
+                >Romantique</a
+              >
+              <a href="" class="btn four"
+                ><i class="fa-solid fa-fire fa-lg" aria-hidden="true"></i>Nos
+                pépites</a
+              >
+            </div>
+          </div>
+          <!------------INFOS---------------->
+          <div class="info espaces">
+            <div class="cercle">
+              <i class="fa-solid fa-info fa-xs" aria-hidden="true"></i>
+            </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </section>
         <!---------------HEBERGEMENTS ET ACTIVITES------------------>
         <div class="hebergements-and-populaires">
           <!-------------Section de gauche------------>
@@ -106,7 +128,7 @@
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/fred-kleber.jpg"
@@ -117,8 +139,8 @@
                       <h3 class="card-title">Hôtel du port</h3>
                       <p>Nuit à partir de 52<span class="euro">€</span></p>
                     </div>
+                    <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
                     <div class="card-rating">
-                      <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -133,7 +155,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/febrian-zakaria.jpg"
@@ -158,7 +180,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/reisetopia.jpg"
@@ -183,9 +205,7 @@
                   </div>
                 </article>
               </a>
-            </div>
-            <div class="hebergements-cards">
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/annie-spratt.jpg"
@@ -197,7 +217,6 @@
                       <p>Nuit à partir de 46<span class="euro">€</span></p>
                     </div>
                     <div class="card-rating">
-                      <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -206,13 +225,12 @@
                         class="fa-xs fa-solid fa-star neutral-star"
                         aria-hidden="true"
                       ></i>
-                      <!-- "sr-only" signifie que ce contenu n'est visible que par les lecteurs d'écran / Directive UE pour l'accéssibilité des personnes aveugles-->
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/marcus-loke.jpg"
@@ -237,7 +255,7 @@
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="width">
                 <article class="card">
                   <img
                     src="./images/hebergements/nicate-lee.jpg"
@@ -263,15 +281,13 @@
                 </article>
               </a>
             </div>
-            <div>
-              <a href="#" class="lien">Afficher plus</a>
-            </div>
+            <a href="#" class="lien">Afficher plus</a>
           </section>
-          <!--------Section de droite--------->
+          <!-------------Section de droite------------->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
-              <!-----Lien Logo progression----->
+              <!--------Lien Logo progression------->
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
@@ -361,54 +377,54 @@
             </div>
           </section>
         </div>
-        <!-------------Section des Activités------------>
+        <!-----------------Section des Activités---------------->
         <div class="activites">
-          <section class="activites-card" id="leisure">
+          <section id="leisure">
             <div>
               <h2 class="section-title">Activités à Marseille</h2>
             </div>
             <div class="activites-cards">
-              <a href="#">
+              <a href="#" class="taille">
                 <article class="card-act">
                   <img
                     src="./images/activites/reno-laithienne.jpg"
                     alt="Image du Vieux Port de Marseille"
                   />
-                  <div>
-                    <h3 class="card-act-title">Vieux-Port</h3>
+                  <div class="legendes">
+                    <h3 class="card-title">Vieux-Port</h3>
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="taille">
                 <article class="card-act">
                   <img
                     src="./images/activites/paul-hermann.jpg"
                     alt="Image du Fort de Pomègues"
                   />
-                  <div>
-                    <h3 class="card-act-title">Fort de Pomègues</h3>
+                  <div class="legendes">
+                    <h3 class="card-title">Fort de Pomègues</h3>
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="taille">
                 <article class="card-act">
                   <img
                     src="./images/activites/kilyan-sockalingum.jpg"
                     alt="Vue sur la mer"
                   />
-                  <div>
-                    <h3 class="card-act-title">Parc national des Calanques</h3>
+                  <div class="legendes">
+                    <h3 class="card-title">Parc national des Calanques</h3>
                   </div>
                 </article>
               </a>
-              <a href="#">
+              <a href="#" class="taille">
                 <article class="card-act">
                   <img
                     src="./images/activites/florian-wehde.jpg"
                     alt="Vue sur notre Dame de la Garde"
                   />
-                  <div>
-                    <h3 class="card-act-title">Notre-Dame-de-la-Garde</h3>
+                  <div class="legendes">
+                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                   </div>
                 </article>
               </a>

@@ -1,55 +1,59 @@
 /*******Mise en forme du HEADER*******/
 .flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   height: 79px;
-  margin-top: 14px;
   margin-bottom: 30px;
 }
+
 .logo {
   width: 61.09px;
   height: 19px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
-.items {
-  font-size: 16px;
-  font-weight: 400;
-  padding-top: 12px;
+/******Bloc spécifiques des liens du menu, pour pouvoir allonger le soulignement au-dessus ou au-dessous selon le format de l'écran******/
+.block {
+  display: flex;
+  gap: 50px;
 }
-.items:first-child {
-  margin-right: 68px;
+.block div {
+  display: inline-block;
+  width: 110px;
+  padding-top: 15px;
+  text-align: center;
 }
 
-.items_overline:hover {
+.block div:hover {
   color: var(--main-color);
   border-top: 2px solid var(--main-color);
 }
 
+/********Media Queries*********/
 /******************* Small devices (phones, less than 768px)**************/
 @media (max-width: 767.98px) {
   .flex {
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid var(--main-bg-color);
-    margin-top: 10px;
     height: 115px;
-    justify-content: space-around;
+    margin-bottom: 20px;
   }
+
   .logo {
-    margin-top: 0;
+    margin-top: 25px;
   }
-  .items:first-child {
-    margin-right: 95px;
+
+  .block {
+    gap: 0;
   }
-  .items:last-child {
-    margin-right: 25px;
-  }
-  .items {
+
+  .block div {
+    width: 200px;
     padding-top: 0;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--main-bg-color);
   }
-  .items_overline:hover {
+  .block div:hover {
+    color: var(--main-color);
     border-top: none;
     border-bottom: 2px solid var(--main-color);
   }

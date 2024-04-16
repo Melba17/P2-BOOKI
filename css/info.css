@@ -1,7 +1,8 @@
 /************Section Infos et Recherches***************/
-.espace {
+.espaces {
   margin-bottom: 35px;
 }
+/*hauteur des lignes*/
 .ligne {
   line-height: 30px;
 }
@@ -49,20 +50,20 @@
   border: none;
   cursor: pointer;
 }
-input[type="image"] {
+.rechercher {
+  display: block;
+}
+.loupe {
   display: none;
 }
 
 /**************Filtres**********************/
-span {
-  font-size: 18px;
-  font-weight: 700;
-}
 .cta {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+/******boutons*****/
 .cta_two {
   display: flex;
   flex-direction: row;
@@ -75,7 +76,7 @@ span {
   height: 50px;
   padding: 4px, 19px, 4px, 19px;
   border-radius: 25px;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--icon-bg-color);
   font-size: 17px;
   font-weight: 700;
   gap: 10px;
@@ -98,9 +99,17 @@ span {
 /***************INFOS**************/
 .info {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+.cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  border: 2px solid var(--icon-bg-color);
 }
 /************************** Media queries **********************/
 /*******Medium devices (tablets, less/equal than 1024px)*******************/
@@ -113,29 +122,44 @@ span {
     font-size: 16px;
   }
 }
-
+/*******************Media Queries************************/
 /******************* Small devices (phones, less than 768px)**************/
 @media (max-width: 767.98px) {
-  .espace {
-    padding: 0 20px;
+  .marge {
+    margin-left: 20px;
   }
+  .haut {
+    margin-top: 30px;
+  }
+  /***champ de recherche****/
   .cadre {
-    width: 250px;
+    width: 235px;
     text-align: start;
-    padding-left: 25px;
+    padding-left: 20px;
+    margin-right: -10px;
   }
-  .submit {
+
+  /***icône loupe à la place du bouton "rechercher"***/
+  .rechercher {
     display: none;
   }
-  input[type="image"] {
+  .loupe {
     display: block;
   }
+  .submit {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+  }
+  /*******filtres***********/
   .cta_two {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
   }
   .btn {
+    margin-top: 10px;
     font-size: 14px;
   }
   .one {
