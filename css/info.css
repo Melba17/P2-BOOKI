@@ -31,10 +31,10 @@
   border-left: none;
   height: 49px;
   width: 195px;
+  margin-right: -5px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  outline: none;
   cursor: pointer;
 }
 /***CTA****/
@@ -46,7 +46,6 @@
   color: white;
   font-size: 18px;
   font-weight: 700;
-  padding: 15px, 16px, 15px, 16px;
   border: none;
   cursor: pointer;
 }
@@ -58,23 +57,24 @@
 }
 
 /**************Filtres**********************/
+/**ligne filtres + boutons***/
 .cta {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-/******boutons*****/
+/******ligne boutons*****/
 .cta_two {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
+/**boutons individuels**/
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  padding: 4px, 19px, 4px, 19px;
+  height: 49px;
   border-radius: 25px;
   border: 2px solid var(--icon-bg-color);
   font-size: 17px;
@@ -125,8 +125,9 @@
 /*******************Media Queries************************/
 /******************* Small devices (phones, less than 768px)**************/
 @media (max-width: 767.98px) {
+  /****formatage de la section info*****/
   .marge {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .haut {
     margin-top: 30px;
@@ -136,7 +137,7 @@
     width: 235px;
     text-align: start;
     padding-left: 20px;
-    margin-right: -10px;
+    margin-right: -15px;
   }
 
   /***icône loupe à la place du bouton "rechercher"***/

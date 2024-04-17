@@ -51,7 +51,7 @@
   align-items: center;
 }
 
-/****** Hebergements / Section de Gauche***********/
+/****** Hebergements / Section de Gauche*********/
 .hebergements {
   width: 65%;
   margin-bottom: 35px;
@@ -193,6 +193,9 @@
   /****** Hebergements / Section de Gauche***********/
   .hebergements {
     width: 100%;
+  }
+  .width {
+    width: 31.2%;
   }
   .hebergements-cards img {
     height: 110px;

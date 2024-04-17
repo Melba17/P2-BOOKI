@@ -2,13 +2,13 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <!------------Pour les MediaQueries------------------>
+    <!-- Pour les MediaQueries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Nom de l'onglet-->
+    <!-- Nom de l'onglet -->
     <title>Booki</title>
-    <!-------Ajout du Logo Booki dans l'onglet--------->
+    <!-- Ajout du Logo Booki dans l'onglet -->
     <link rel="icon" type="image/svg+xml" href="images/logo/Booki.png" />
-    <!--------Ajout des liens pour les fonts et icones----->
+    <!-- Ajout des liens pour les fonts et icones -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,12 +22,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!---------Ajout du style css de référence-------->
+    <!-- Ajout du style css de référence -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="main-container">
-      <!--------------------NAVBAR--------------------->
+      <!-- NAVBAR -->
       <header>
         <nav>
           <div class="flex">
@@ -49,45 +49,43 @@
         </nav>
       </header>
       <main>
-        <!--------------PRESENTATION--------------->
+        <!-- PRESENTATION -->
         <section class="marge">
           <div class="ligne espaces haut">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
-          <!--------------Barre de Recherche--------------->
+          <!-- Barre de Recherche -->
           <div class="form espaces">
             <div class="fond">
-              <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
+              <!-- aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans) -->
               <i
                 class="fa-solid fa-location-dot fa-lg"
                 style="color: #000000"
                 aria-hidden="true"
               ></i>
             </div>
-            <section>
-              <form action="" method="get">
-                <input
-                  type="search"
-                  name="ville"
-                  value="Marseille, France"
-                  class="cadre"
-                />
-                <button type="submit" class="submit">
-                  <span class="rechercher">Rechercher</span
-                  ><!----icône loupe pour la partie responsive mobile---->
-                  <span class="loupe"
-                    ><i
-                      class="fa-solid fa-magnifying-glass"
-                      style="color: #ffffff"
-                      aria-hidden="true"
-                    ></i
-                  ></span>
-                </button>
-              </form>
-            </section>
+            <form action="#" method="get">
+              <input
+                type="search"
+                name="ville"
+                value="Marseille, France"
+                class="cadre"
+              />
+              <button type="submit" class="submit">
+                <span class="rechercher">Rechercher</span
+                ><!-- icône loupe pour la partie responsive mobile -->
+                <span class="loupe"
+                  ><i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: #ffffff"
+                    aria-hidden="true"
+                  ></i
+                ></span>
+              </button>
+            </form>
           </div>
-          <!------------FILTRES------------->
+          <!-- FILTRES -->
           <div class="cta espaces">
             <span>Filtres</span>
             <div class="cta_two">
@@ -99,7 +97,7 @@
                 >Économique</a
               >
               <a href="" class="btn two"
-                ><i class="fa-solid fa-person fa-lg" aria-hidden="true"></i
+                ><i class="fa-solid fa-person fa-xl" aria-hidden="true"></i
                 >Familial</a
               >
               <a href="" class="btn three"
@@ -112,7 +110,7 @@
               >
             </div>
           </div>
-          <!------------INFOS---------------->
+          <!-- INFOS -->
           <div class="info espaces">
             <div class="cercle">
               <i class="fa-solid fa-info fa-xs" aria-hidden="true"></i>
@@ -120,9 +118,9 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </section>
-        <!---------------HEBERGEMENTS ET ACTIVITES------------------>
+        <!-- HEBERGEMENTS ET ACTIVITES -->
         <div class="hebergements-and-populaires">
-          <!-------------Section de gauche------------>
+          <!-- Section de gauche -->
           <section class="hebergements" id="housing">
             <div class="populaires-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
@@ -139,7 +137,7 @@
                       <h3 class="card-title">Hôtel du port</h3>
                       <p>Nuit à partir de 52<span class="euro">€</span></p>
                     </div>
-                    <!---aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans)--->
+                    <!-- aria-hidden="true" pour ne pas être vocalisé par les AT (Aides Techniques ou lecteurs d'écrans) -->
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -149,7 +147,7 @@
                         class="fa-xs fa-solid fa-star neutral-star"
                         aria-hidden="true"
                       ></i>
-                      <!-- "sr-only" signifie que ce contenu n'est visible que par les lecteurs d'écran / Directive UE pour l'accéssibilité des personnes aveugles-->
+                      <!-- "sr-only" signifie que ce contenu n'est visible que par les lecteurs d'écran / Directive UE pour l'accéssibilité des personnes aveugles -->
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
@@ -283,11 +281,11 @@
             </div>
             <a href="#" class="lien">Afficher plus</a>
           </section>
-          <!-------------Section de droite------------->
+          <!-- Section de droite -->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
-              <!--------Lien Logo progression------->
+              <!-- Lien Logo progression -->
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
@@ -377,7 +375,7 @@
             </div>
           </section>
         </div>
-        <!-----------------Section des Activités---------------->
+        <!-- Section des Activités -->
         <div class="activites">
           <section id="leisure">
             <div>
@@ -432,7 +430,7 @@
           </section>
         </div>
       </main>
-      <!------------------------FOOTER------------------------>
+      <!-- FOOTER -->
       <footer>
         <div class="bckg">
           <div class="footer">
