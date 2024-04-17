@@ -7,25 +7,26 @@
 }
 
 .logo {
-  width: 61.09px;
+  width: 61px;
   height: 19px;
   margin-top: 30px;
 }
-/******Bloc spécifiques des liens du menu, pour pouvoir allonger le soulignement au-dessus ou au-dessous selon le format de l'écran******/
+/******Bloc spécifique des liens du menu, pour pouvoir allonger le soulignement au-dessus ou au-dessous selon le format de l'écran******/
 .block {
   display: flex;
-  gap: 50px;
-}
-.block div {
-  display: inline-block;
-  width: 110px;
+  justify-content: center;
+  gap: 60px;
+  width: 250px;
   padding-top: 15px;
-  text-align: center;
 }
 
-.block div:hover {
+.block_items a {
+  padding-top: 13px;
+}
+
+.block_items a:hover {
   color: var(--main-color);
-  border-top: 2px solid var(--main-color);
+  border-top: 3px solid var(--main-color);
 }
 
 /********Media Queries*********/
@@ -39,22 +40,24 @@
   }
 
   .logo {
-    margin-top: 25px;
+    margin-top: 30px;
   }
-
   .block {
+    width: 100%;
+    text-align: center;
     gap: 0;
   }
-
-  .block div {
-    width: 200px;
-    padding-top: 0;
+  .block_items {
+    width: 100%;
     padding-bottom: 15px;
     border-bottom: 2px solid var(--main-bg-color);
   }
-  .block div:hover {
-    color: var(--main-color);
+  .block_items a:hover {
     border-top: none;
+  }
+  .block_items:hover {
+    color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
+    border-top: none;
   }
 }
