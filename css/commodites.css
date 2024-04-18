@@ -61,9 +61,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 27px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  gap: 3.5%;
+  margin-bottom: 4%;
+}
+.hebergements-cards .card {
+  margin-top: 12%;
 }
 
 .width {
@@ -194,9 +196,7 @@
   .hebergements {
     width: 100%;
   }
-  .width {
-    width: 31.2%;
-  }
+
   .hebergements-cards img {
     height: 110px;
   }
@@ -246,13 +246,9 @@
   }
   .hebergements-cards {
     flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
   }
   .hebergements-cards .card {
-    display: flex;
-    flex-direction: column;
+    margin-top: 5%;
   }
 
   /******Section Populaires*******/

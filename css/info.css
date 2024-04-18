@@ -35,6 +35,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+  outline: none;
   cursor: pointer;
 }
 /***CTA****/
@@ -74,9 +75,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 49px;
+  height: 50px;
   border-radius: 25px;
   border: 2px solid var(--icon-bg-color);
+  padding: 0 19px 0 19px;
   font-size: 17px;
   font-weight: 700;
   gap: 10px;
@@ -84,18 +86,7 @@
 .btn:hover {
   background-color: var(--filter-bg-color);
 }
-.one {
-  width: 173px;
-}
-.two {
-  width: 134px;
-}
-.three {
-  width: 170px;
-}
-.four {
-  width: 167px;
-}
+
 /***************INFOS**************/
 .info {
   display: flex;
@@ -118,6 +109,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .btn {
     font-size: 16px;
   }
@@ -127,32 +119,35 @@
 @media (max-width: 767.98px) {
   /****formatage de la section info*****/
   .marge {
-    margin-left: 15px;
+    margin-left: 20px;
   }
   .haut {
     margin-top: 30px;
   }
-  /***champ de recherche****/
+
+  /****champ de recherche****/
   .cadre {
-    width: 235px;
+    width: 245px;
     text-align: start;
     padding-left: 20px;
     margin-right: -15px;
   }
 
   /***icône loupe à la place du bouton "rechercher"***/
-  .rechercher {
-    display: none;
-  }
-  .loupe {
-    display: block;
-  }
+
   .submit {
     width: 50px;
     height: 49px;
     border-radius: 15px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
   }
+  .rechercher {
+    display: none;
+  }
+  .loupe {
+    display: block;
+  }
+
   /*******filtres***********/
   .cta_two {
     flex-direction: row;
@@ -160,19 +155,8 @@
     gap: 10px;
   }
   .btn {
+    width: 34%;
     margin-top: 10px;
     font-size: 14px;
-  }
-  .one {
-    width: 162.5px;
-  }
-  .two {
-    width: 162.5px;
-  }
-  .three {
-    width: 162.5px;
-  }
-  .four {
-    width: 162.5px;
   }
 }
