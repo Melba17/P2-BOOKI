@@ -150,7 +150,7 @@
 
   /*******filtres***********/
   .cta_two {
-    flex-direction: row;
+    /***partie flexible avec retour à la ligne***/
     flex-wrap: wrap;
     gap: 10px;
   }
