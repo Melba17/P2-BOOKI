@@ -59,7 +59,6 @@
 
 .hebergements-cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 3.5%;
   margin-bottom: 4%;
