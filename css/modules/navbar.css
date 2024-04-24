@@ -58,6 +58,5 @@
   .block_items:hover {
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
-    border-top: none;
   }
 }
