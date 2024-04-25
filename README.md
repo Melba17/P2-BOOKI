@@ -1,4 +1,4 @@
-# booki-starter-pack
+# P2-BOOKI
 
 Openclassrooms - Parcours Développeur d'application JavaScript React
 
